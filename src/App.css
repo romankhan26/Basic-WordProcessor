@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,165 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+
+
+
+
+/* 
+.App {
+  padding: 20px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.editor {
+  border: 1px solid #ddd;
+  padding: 10px;
+  min-height: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+  margin-top: 20px;
+}
+
+@media (max-width: 1440px) {
+  .App {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .toolbar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .toolbar {
+    font-size: 12px;
+  }
+} */
+
+
+/* 
+/* src/App.css */
+
+body {
+  background-color: #f0f4f8; /* Light blue-grey background */
+  color: #333; /* Dark grey text */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.toolbar button,
+.toolbar input,
+.toolbar select {
+  background-color: #ff6f61; /* Coral buttons and inputs */
+  color: #fff; /* White text */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toolbar button:hover,
+.toolbar input:hover,
+.toolbar select:hover {
+  background-color: #ff8566; /* Slightly lighter coral on hover */
+}
+
+.toolbar button:active,
+.toolbar input:active,
+.toolbar select:active {
+  background-color: #ff4d4d; /* Darker coral on active */
+}
+
+.toolbar input[type='number'] {
+  max-width: 80px;
+}
+
+.toolbar input[type='color'] {
+  padding: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+}
+
+.editor {
+  border: 1px solid #ddd;
+  padding: 20px;
+  min-height: 300px;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e8f0fe; /* Light blue background */
+  color: #333;
+  border-radius: 8px;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+.centerAlign {
+  text-align: center;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+@media (max-width: 1440px) {
+  .App {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .toolbar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .toolbar {
+    font-size: 12px;
   }
 }
